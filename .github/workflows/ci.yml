@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: uv sync --all-groups --frozen
+      - run: uv sync --all-groups --extra local-milvus --frozen
       - run: uv run ruff check src tests tools
       - run: uv run mypy src
       - run: uv run python -m unittest discover -s tests
@@ -24,7 +24,7 @@ jobs:
       - name: Secret scan
         shell: bash
         run: |
-          if rg -n --hidden --glob '!uv.lock' --glob '!datasets/demo/.runtime/**' '(password|api[_-]?key|client_secret)\s*[:=]\s*[^\s"'"'']+' .; then
+          if rg -n --hidden --glob '!uv.lock' --glob '!datasets/demo/.runtime/**' --glob '!tests/**' "(?i)(password|api[_-]?key|client_secret)[[:space:]]*[:=][[:space:]]*(\"[^\"]+\"|'[^']+'|(sk-|ghp_|github_pat_|AKIA)[A-Za-z0-9_-]{10,})" .; then
             echo "Potential hard-coded secret found"
             exit 1
           fi

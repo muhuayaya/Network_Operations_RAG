@@ -43,7 +43,7 @@ class PageServices:
 def render(services: Any = None) -> None:
     """在 ``streamlit run`` 调用时渲染运维控制台。"""
     try:
-        import streamlit as st  # type: ignore[import-not-found]  # Streamlit 是可选依赖。
+        import streamlit as st  # Streamlit 是可选依赖。
     except ImportError as error:  # pragma: no cover  # 仅部署环境会触发，核心测试不覆盖。
         raise RuntimeError("Streamlit 界面是可选依赖，请单独安装 streamlit 后再运行") from error
 
