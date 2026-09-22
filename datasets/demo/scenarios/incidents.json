@@ -1,0 +1,72 @@
+[
+  {
+    "scenario_id": "inc-l2-loop",
+    "title": "L2 loop",
+    "site_id": "site-sz-hq",
+    "primary_device_id": "rg-sz-access-01",
+    "expected_alarm_code": "L2_LOOP_DETECTED",
+    "expected_evidence": {
+      "alarm_id": "alarm-01-001",
+      "ticket_id": "ticket-01-01",
+      "baseline_snapshot_id": "cfg-rg-sz-access-01-baseline",
+      "current_snapshot_id": "cfg-rg-sz-access-01-current"
+    },
+    "expected_outcome": "返回确定性事实、只读验证步骤、风险标记和可追溯引用；不执行修复。"
+  },
+  {
+    "scenario_id": "inc-ospf-exstart",
+    "title": "OSPF ExStart/MTU",
+    "site_id": "site-gz-dc",
+    "primary_device_id": "h3c-gz-core-01",
+    "expected_alarm_code": "OSPF_NEIGHBOR_EXSTART",
+    "expected_evidence": {
+      "alarm_id": "alarm-02-001",
+      "ticket_id": "ticket-02-01",
+      "baseline_snapshot_id": "cfg-h3c-gz-core-01-baseline",
+      "current_snapshot_id": "cfg-h3c-gz-core-01-current"
+    },
+    "expected_outcome": "返回确定性事实、只读验证步骤、风险标记和可追溯引用；不执行修复。"
+  },
+  {
+    "scenario_id": "inc-lacp-mismatch",
+    "title": "Cross-vendor LACP mismatch",
+    "site_id": "site-sz-hq",
+    "primary_device_id": "hw-sz-core-01",
+    "expected_alarm_code": "LACP_STATE_MISMATCH",
+    "expected_evidence": {
+      "alarm_id": "alarm-03-001",
+      "ticket_id": "ticket-03-01",
+      "baseline_snapshot_id": "cfg-hw-sz-core-01-baseline",
+      "current_snapshot_id": "cfg-hw-sz-core-01-current"
+    },
+    "expected_outcome": "返回确定性事实、只读验证步骤、风险标记和可追溯引用；不执行修复。"
+  },
+  {
+    "scenario_id": "inc-acl-outage",
+    "title": "ACL outage",
+    "site_id": "site-gz-dc",
+    "primary_device_id": "hw-gz-access-01",
+    "expected_alarm_code": "ACL_DENY_SPIKE",
+    "expected_evidence": {
+      "alarm_id": "alarm-04-001",
+      "ticket_id": "ticket-04-01",
+      "baseline_snapshot_id": "cfg-hw-gz-access-01-baseline",
+      "current_snapshot_id": "cfg-hw-gz-access-01-current"
+    },
+    "expected_outcome": "返回确定性事实、只读验证步骤、风险标记和可追溯引用；不执行修复。"
+  },
+  {
+    "scenario_id": "inc-optical-flap",
+    "title": "Optical uplink flapping",
+    "site_id": "site-sh-branch",
+    "primary_device_id": "rg-sh-core-01",
+    "expected_alarm_code": "OPTICAL_RX_LOW",
+    "expected_evidence": {
+      "alarm_id": "alarm-05-001",
+      "ticket_id": "ticket-05-01",
+      "baseline_snapshot_id": "cfg-rg-sh-core-01-baseline",
+      "current_snapshot_id": "cfg-rg-sh-core-01-current"
+    },
+    "expected_outcome": "返回确定性事实、只读验证步骤、风险标记和可追溯引用；不执行修复。"
+  }
+]

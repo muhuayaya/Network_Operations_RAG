@@ -1,0 +1,46 @@
+[project]
+name = "netops-copilot"
+version = "0.1.0"
+description = "面向企业 IT 与网络运维的证据驱动、默认只读 RAG 系统。"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "pydantic>=2.11,<3",
+    "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+demo-index = ["chromadb>=1,<2"]
+local-milvus = [
+    "pymilvus>=2.5,<3",
+    "psycopg[binary]>=3.2,<4",
+    "streamlit>=1.64,<2",
+]
+
+[project.scripts]
+netops-copilot = "netops_copilot.interfaces.cli.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18,<2",
+    "pytest>=8.3,<9",
+    "ruff>=0.12,<1",
+    "types-PyYAML>=6.0,<7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["netops_copilot"]

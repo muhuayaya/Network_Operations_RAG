@@ -1,0 +1,302 @@
+[
+  {
+    "device_id": "hw-sz-core-01",
+    "vendor": "Huawei",
+    "model": "S6730-H",
+    "os_family": "VRP",
+    "os_version": "V200R022",
+    "role": "core",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "hw-sz-core-02",
+    "vendor": "Huawei",
+    "model": "S6730-H",
+    "os_family": "VRP",
+    "os_version": "V200R022",
+    "role": "core",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "hw-gz-edge-01",
+    "vendor": "Huawei",
+    "model": "AR6140",
+    "os_family": "VRP",
+    "os_version": "V300R023",
+    "role": "edge",
+    "site_id": "site-gz-dc",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "hw-gz-access-01",
+    "vendor": "Huawei",
+    "model": "S5735-L",
+    "os_family": "VRP",
+    "os_version": "V200R021",
+    "role": "access",
+    "site_id": "site-gz-dc",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "hw-sh-access-01",
+    "vendor": "Huawei",
+    "model": "S5735-L",
+    "os_family": "VRP",
+    "os_version": "V200R021",
+    "role": "access",
+    "site_id": "site-sh-branch",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "h3c-sz-dist-01",
+    "vendor": "H3C",
+    "model": "S5560X",
+    "os_family": "Comware",
+    "os_version": "V7",
+    "role": "distribution",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "h3c-sz-dist-02",
+    "vendor": "H3C",
+    "model": "S5560X",
+    "os_family": "Comware",
+    "os_version": "V7",
+    "role": "distribution",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "h3c-gz-core-01",
+    "vendor": "H3C",
+    "model": "S12508X",
+    "os_family": "Comware",
+    "os_version": "V7",
+    "role": "core",
+    "site_id": "site-gz-dc",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "h3c-gz-access-01",
+    "vendor": "H3C",
+    "model": "S5130S",
+    "os_family": "Comware",
+    "os_version": "V7",
+    "role": "access",
+    "site_id": "site-gz-dc",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "h3c-sh-access-01",
+    "vendor": "H3C",
+    "model": "S5130S",
+    "os_family": "Comware",
+    "os_version": "V7",
+    "role": "access",
+    "site_id": "site-sh-branch",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "rg-sz-access-01",
+    "vendor": "Ruijie",
+    "model": "RG-S5760C",
+    "os_family": "RGOS",
+    "os_version": "11.4",
+    "role": "access",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "rg-sz-access-02",
+    "vendor": "Ruijie",
+    "model": "RG-S5760C",
+    "os_family": "RGOS",
+    "os_version": "11.4",
+    "role": "access",
+    "site_id": "site-sz-hq",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "rg-gz-dist-01",
+    "vendor": "Ruijie",
+    "model": "RG-S7800C",
+    "os_family": "RGOS",
+    "os_version": "11.4",
+    "role": "distribution",
+    "site_id": "site-gz-dc",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "rg-sh-core-01",
+    "vendor": "Ruijie",
+    "model": "RG-S7800C",
+    "os_family": "RGOS",
+    "os_version": "11.4",
+    "role": "core",
+    "site_id": "site-sh-branch",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  },
+  {
+    "device_id": "rg-sh-access-01",
+    "vendor": "Ruijie",
+    "model": "RG-S5760C",
+    "os_family": "RGOS",
+    "os_version": "11.4",
+    "role": "access",
+    "site_id": "site-sh-branch",
+    "interfaces": [
+      "GE1/0/1",
+      "GE1/0/2",
+      "XGE1/0/49",
+      "XGE1/0/50"
+    ],
+    "compatible_concepts": [
+      "Cisco IOS interface",
+      "Cisco IOS OSPF",
+      "Cisco IOS ACL"
+    ]
+  }
+]

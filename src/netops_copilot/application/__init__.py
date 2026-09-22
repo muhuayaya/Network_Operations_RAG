@@ -1,0 +1,190 @@
+"""独立于交付协议和 SDK 的用例编排。"""
+
+from netops_copilot.application.authorization import (
+    AuthorizedQuery,
+    QueryAuthorizationError,
+    authorize_query,
+    normalize_query,
+)
+from netops_copilot.application.config_diff import (
+    ConfigurationDiff,
+    ConfigurationDiffer,
+    ConfigurationDiffError,
+    diff_configurations,
+)
+from netops_copilot.application.correlation import AlarmCorrelator, CorrelationMatch, IncidentSignal
+from netops_copilot.application.degradation import (
+    DegradationState,
+    FailureClassification,
+    classify_query,
+)
+from netops_copilot.application.demo_services import (
+    ApplicationServiceUnavailable,
+    DemoApplicationServices,
+    QueryVectorizer,
+)
+from netops_copilot.application.evaluation import (
+    BaselineReport,
+    BaselineRunner,
+    EvaluationMetrics,
+    EvaluationVersion,
+    GoldenCase,
+    citation_coverage,
+    citation_precision,
+    diff_accuracy,
+    f1_score,
+    latency_percentile,
+    load_golden_set,
+    mrr,
+    ndcg,
+    recall_at_k,
+    refusal_accuracy,
+    regression_failures,
+)
+from netops_copilot.application.evidence import (
+    AnswerSentence,
+    EvidenceAssembler,
+    EvidenceLimits,
+    EvidenceValidationError,
+    GroundedAnswer,
+    ground_answer,
+)
+from netops_copilot.application.fusion import FusedCandidate, FusionInputError, rrf_fuse
+from netops_copilot.application.grounded_answers import (
+    AnswerCitation,
+    AnswerStatus,
+    GroundedAnswerService,
+    KeywordReranker,
+    ModelSource,
+)
+from netops_copilot.application.incident_services import (
+    ConfigurationExplanation,
+    DiagnoseAlarmIncident,
+    ExplainConfigurationDiff,
+    IncidentDiagnosis,
+    KnowledgeRetriever,
+)
+from netops_copilot.application.indexing import (
+    ActiveIndex,
+    IndexCompatibilityError,
+    VersionedIndexManager,
+    collection_name,
+)
+from netops_copilot.application.indexing_service import (
+    CoordinatedIndexer,
+    IndexBuildReport,
+    IndexingError,
+)
+from netops_copilot.application.ingestion import IngestionCoordinator, IngestionRun
+from netops_copilot.application.local_capabilities import (
+    LocalCapabilityReport,
+    LocalCapabilityStatus,
+    automatic_fallback,
+    local_capability_report,
+)
+from netops_copilot.application.observation import (
+    ObservationAudit,
+    ObservationCoordinator,
+    ObservationLimits,
+    ObservationResult,
+    ObservationStatus,
+)
+from netops_copilot.application.query import QueryMode, QueryResult, QueryService
+from netops_copilot.application.recommendations import (
+    ReadOnlyVerification,
+    RecommendationValidationError,
+    RiskAwareSuggestion,
+    suggestion_for_change,
+)
+from netops_copilot.application.safety import (
+    DelimitedEvidence,
+    SafeAnswerSchema,
+    UnsafeModelOutputError,
+    delimit_evidence,
+    parse_safe_model_output,
+)
+
+__all__ = [
+    "ActiveIndex",
+    "AlarmCorrelator",
+    "AnswerCitation",
+    "AnswerSentence",
+    "AnswerStatus",
+    "ApplicationServiceUnavailable",
+    "AuthorizedQuery",
+    "BaselineReport",
+    "BaselineRunner",
+    "ConfigurationDiff",
+    "ConfigurationDiffError",
+    "ConfigurationDiffer",
+    "ConfigurationExplanation",
+    "CoordinatedIndexer",
+    "CorrelationMatch",
+    "DegradationState",
+    "DelimitedEvidence",
+    "DemoApplicationServices",
+    "DiagnoseAlarmIncident",
+    "EvaluationMetrics",
+    "EvaluationVersion",
+    "EvidenceAssembler",
+    "EvidenceLimits",
+    "EvidenceValidationError",
+    "ExplainConfigurationDiff",
+    "FailureClassification",
+    "FusedCandidate",
+    "FusionInputError",
+    "GoldenCase",
+    "GroundedAnswer",
+    "GroundedAnswerService",
+    "IncidentDiagnosis",
+    "IncidentSignal",
+    "IndexBuildReport",
+    "IndexCompatibilityError",
+    "IndexingError",
+    "IngestionCoordinator",
+    "IngestionRun",
+    "KeywordReranker",
+    "KnowledgeRetriever",
+    "LocalCapabilityReport",
+    "LocalCapabilityStatus",
+    "ModelSource",
+    "ObservationAudit",
+    "ObservationCoordinator",
+    "ObservationLimits",
+    "ObservationResult",
+    "ObservationStatus",
+    "QueryAuthorizationError",
+    "QueryMode",
+    "QueryResult",
+    "QueryService",
+    "QueryVectorizer",
+    "ReadOnlyVerification",
+    "RecommendationValidationError",
+    "RiskAwareSuggestion",
+    "SafeAnswerSchema",
+    "UnsafeModelOutputError",
+    "VersionedIndexManager",
+    "authorize_query",
+    "automatic_fallback",
+    "citation_coverage",
+    "citation_precision",
+    "classify_query",
+    "collection_name",
+    "delimit_evidence",
+    "diff_accuracy",
+    "diff_configurations",
+    "f1_score",
+    "ground_answer",
+    "latency_percentile",
+    "load_golden_set",
+    "local_capability_report",
+    "mrr",
+    "ndcg",
+    "normalize_query",
+    "parse_safe_model_output",
+    "recall_at_k",
+    "refusal_accuracy",
+    "regression_failures",
+    "rrf_fuse",
+    "suggestion_for_change",
+]

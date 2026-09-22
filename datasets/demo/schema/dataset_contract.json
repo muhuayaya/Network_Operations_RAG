@@ -1,0 +1,22 @@
+{
+  "dataset_version": "1.0.0",
+  "seed": "fixed-v1",
+  "synthetic_only": true,
+  "required_collections": [
+    "sites",
+    "devices",
+    "links",
+    "config_snapshots",
+    "alarms",
+    "tickets",
+    "knowledge",
+    "incidents",
+    "golden_set"
+  ],
+  "prohibited_content": [
+    "customer data",
+    "credentials",
+    "private keys",
+    "production change commands"
+  ]
+}

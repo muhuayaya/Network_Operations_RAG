@@ -1,0 +1,19 @@
+{
+  "dataset_id": "netops-reference-data",
+  "version": "1.0.0",
+  "generated_at": "2026-09-01T00:00:00+00:00",
+  "synthetic_only": true,
+  "generator": "tools/generate_demo_dataset.py",
+  "counts": {
+    "sites": 3,
+    "devices": 15,
+    "links": 14,
+    "config_snapshots": 30,
+    "alarms": 150,
+    "tickets": 30,
+    "knowledge_documents": 28,
+    "incidents": 5,
+    "golden_set": 50
+  },
+  "inventory_sha256": "fab519febf0fc8c1e2033cc12d5c5adce01f0070697566ddeff09e801e1956eb"
+}

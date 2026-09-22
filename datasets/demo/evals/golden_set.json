@@ -1,0 +1,509 @@
+[
+  {
+    "case_id": "golden-001",
+    "category": "vendor_command",
+    "question": "评测问题 1：如何在 Huawei 场景核对 OSPF 邻居只读检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-ospf-readonly"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-002",
+    "category": "error_code",
+    "question": "评测问题 2：如何在 Huawei 场景核对 ACL 影响评审？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-acl-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-003",
+    "category": "semantic_fault",
+    "question": "评测问题 3：如何在 Huawei 场景核对 链路聚合检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-lacp-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-004",
+    "category": "filter",
+    "question": "评测问题 4：如何在 H3C 场景核对 OSPF ExStart 研判？",
+    "expected_source_ids": [
+      "doc-h3c-comware-ospf-readonly"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-005",
+    "category": "incident",
+    "question": "评测问题 5：如何在 H3C 场景核对 VLAN 一致性检查？",
+    "expected_source_ids": [
+      "doc-h3c-comware-vlan-review"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-006",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0006 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-007",
+    "category": "security",
+    "question": "如何核对 广州数据中心受限访问核验？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-access"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-008",
+    "category": "vendor_command",
+    "question": "评测问题 8：如何在 Ruijie 场景核对 光链路波动检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-optical-health"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-009",
+    "category": "error_code",
+    "question": "评测问题 9：如何在 Ruijie 场景核对 LACP 协商检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-lacp-review"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-010",
+    "category": "semantic_fault",
+    "question": "评测问题 10：如何在 Huawei 场景核对 OSPF 邻居只读检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-ospf-readonly"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-011",
+    "category": "filter",
+    "question": "评测问题 11：如何在 Huawei 场景核对 ACL 影响评审？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-acl-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-012",
+    "category": "incident",
+    "question": "评测问题 12：如何在 Huawei 场景核对 链路聚合检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-lacp-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-013",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0013 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-014",
+    "category": "security",
+    "question": "如何核对 广州数据中心维护窗口记录？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-maintenance"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-015",
+    "category": "vendor_command",
+    "question": "评测问题 15：如何在 H3C 场景核对 接口健康检查？",
+    "expected_source_ids": [
+      "doc-h3c-comware-interface-health"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-016",
+    "category": "error_code",
+    "question": "评测问题 16：如何在 Ruijie 场景核对 二层环路证据收集？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-loop-detection"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-017",
+    "category": "semantic_fault",
+    "question": "评测问题 17：如何在 Ruijie 场景核对 光链路波动检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-optical-health"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-018",
+    "category": "filter",
+    "question": "评测问题 18：如何在 Ruijie 场景核对 LACP 协商检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-lacp-review"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-019",
+    "category": "incident",
+    "question": "评测问题 19：如何在 Huawei 场景核对 OSPF 邻居只读检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-ospf-readonly"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-020",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0020 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-021",
+    "category": "security",
+    "question": "如何核对 广州数据中心拓扑核对？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-topology"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-022",
+    "category": "vendor_command",
+    "question": "评测问题 22：如何在 H3C 场景核对 OSPF ExStart 研判？",
+    "expected_source_ids": [
+      "doc-h3c-comware-ospf-readonly"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-023",
+    "category": "error_code",
+    "question": "评测问题 23：如何在 H3C 场景核对 VLAN 一致性检查？",
+    "expected_source_ids": [
+      "doc-h3c-comware-vlan-review"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-024",
+    "category": "semantic_fault",
+    "question": "评测问题 24：如何在 H3C 场景核对 接口健康检查？",
+    "expected_source_ids": [
+      "doc-h3c-comware-interface-health"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-025",
+    "category": "filter",
+    "question": "评测问题 25：如何在 Ruijie 场景核对 二层环路证据收集？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-loop-detection"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-026",
+    "category": "incident",
+    "question": "评测问题 26：如何在 Ruijie 场景核对 光链路波动检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-optical-health"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-027",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0027 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-028",
+    "category": "security",
+    "question": "如何核对 广州数据中心受限访问核验？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-access"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-029",
+    "category": "vendor_command",
+    "question": "评测问题 29：如何在 Huawei 场景核对 ACL 影响评审？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-acl-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-030",
+    "category": "error_code",
+    "question": "评测问题 30：如何在 Huawei 场景核对 链路聚合检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-lacp-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-031",
+    "category": "semantic_fault",
+    "question": "评测问题 31：如何在 Huawei 场景核对 链路聚合检查？",
+    "expected_source_ids": [
+      "doc-huawei-vrp-lacp-review"
+    ],
+    "expected_vendor": "Huawei",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-032",
+    "category": "filter",
+    "question": "评测问题 32：如何在 H3C 场景核对 OSPF ExStart 研判？",
+    "expected_source_ids": [
+      "doc-h3c-comware-ospf-readonly"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-033",
+    "category": "incident",
+    "question": "评测问题 33：如何在 H3C 场景核对 VLAN 一致性检查？",
+    "expected_source_ids": [
+      "doc-h3c-comware-vlan-review"
+    ],
+    "expected_vendor": "H3C",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-034",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0034 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-035",
+    "category": "security",
+    "question": "如何核对 广州数据中心维护窗口记录？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-maintenance"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-036",
+    "category": "vendor_command",
+    "question": "评测问题 36：如何在 Ruijie 场景核对 光链路波动检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-optical-health"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-037",
+    "category": "error_code",
+    "question": "评测问题 37：如何在 Ruijie 场景核对 LACP 协商检查？",
+    "expected_source_ids": [
+      "doc-ruijie-rgos-lacp-review"
+    ],
+    "expected_vendor": "Ruijie",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-038",
+    "category": "semantic_fault",
+    "question": "评测问题 38：如何在 Cisco-compatible 场景核对 ACL 概念对照？",
+    "expected_source_ids": [
+      "doc-cisco-concept-acl"
+    ],
+    "expected_vendor": "Cisco-compatible",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-039",
+    "category": "filter",
+    "question": "评测问题 39：如何在 Cisco-compatible 场景核对 OSPF 概念对照？",
+    "expected_source_ids": [
+      "doc-cisco-concept-ospf"
+    ],
+    "expected_vendor": "Cisco-compatible",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-040",
+    "category": "incident",
+    "question": "评测问题 40：如何在 Cisco-compatible 场景核对 LACP 概念对照？",
+    "expected_source_ids": [
+      "doc-cisco-concept-lacp"
+    ],
+    "expected_vendor": "Cisco-compatible",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-041",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0041 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-042",
+    "category": "security",
+    "question": "如何核对 广州数据中心拓扑核对？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-topology"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-043",
+    "category": "vendor_command",
+    "question": "评测问题 43：如何在 Generic 场景核对 证据引用 SOP？",
+    "expected_source_ids": [
+      "doc-sop-evidence-citation"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-044",
+    "category": "error_code",
+    "question": "评测问题 44：如何在 Generic 场景核对 只读设备观察 SOP？",
+    "expected_source_ids": [
+      "doc-sop-readonly-device-access"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-045",
+    "category": "semantic_fault",
+    "question": "评测问题 45：如何在 Generic 场景核对 导入前脱敏 SOP？",
+    "expected_source_ids": [
+      "doc-sop-secret-redaction"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-046",
+    "category": "filter",
+    "question": "评测问题 46：如何在 Generic 场景核对 站点访问过滤 SOP？",
+    "expected_source_ids": [
+      "doc-sop-site-access-filter"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-047",
+    "category": "incident",
+    "question": "评测问题 47：如何在 Generic 场景核对 事故升级 SOP？",
+    "expected_source_ids": [
+      "doc-sop-incident-escalation"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  },
+  {
+    "case_id": "golden-048",
+    "category": "no_answer",
+    "question": "未登记设备 QX-0048 的量子链路恢复命令是什么？",
+    "expected_source_ids": [],
+    "expected_vendor": "Generic",
+    "expected_behavior": "no_evidence"
+  },
+  {
+    "case_id": "golden-049",
+    "category": "security",
+    "question": "如何核对 广州数据中心受限访问核验？",
+    "expected_source_ids": [
+      "doc-sop-restricted-gz-access"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "forbidden",
+    "principal_id": "principal-basic-demo",
+    "site_id": "site-gz-dc",
+    "security_level": "restricted"
+  },
+  {
+    "case_id": "golden-050",
+    "category": "vendor_command",
+    "question": "评测问题 50：如何在 Generic 场景核对 Golden Set 维护 SOP？",
+    "expected_source_ids": [
+      "doc-sop-golden-set"
+    ],
+    "expected_vendor": "Generic",
+    "expected_behavior": "cite"
+  }
+]

@@ -1,0 +1,21 @@
+profile: test
+index_schema_version: 1
+device_access_mode: readonly
+llm:
+  provider: fake
+  model: deterministic-fake-llm
+embedding:
+  provider: fake
+  model: deterministic-fake-embedding
+  dimension: 8
+dense_search:
+  provider: in-memory
+lexical_search:
+  provider: in-memory
+metadata_store:
+  provider: sqlite-memory
+device_observation:
+  provider: simulator
+local_model:
+  provider: local-reserved
+  available: false

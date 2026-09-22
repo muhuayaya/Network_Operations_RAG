@@ -1,0 +1,25 @@
+profile: demo-lite
+index_schema_version: 1
+device_access_mode: readonly
+llm:
+  provider: openai-compatible
+  model: qwen-plus
+  api_key_env: DASHSCOPE_API_KEY
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+embedding:
+  provider: openai-compatible
+  model: text-embedding-v4
+  dimension: 1024
+  api_key_env: DASHSCOPE_API_KEY
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+dense_search:
+  provider: chroma
+lexical_search:
+  provider: sqlite-fts5
+metadata_store:
+  provider: sqlite
+device_observation:
+  provider: simulator
+local_model:
+  provider: local-reserved
+  available: false

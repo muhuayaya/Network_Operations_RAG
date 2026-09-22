@@ -1,0 +1,30 @@
+name: netops-copilot-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.10"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: uv sync --all-groups --frozen
+      - run: uv run ruff check src tests tools
+      - run: uv run mypy src
+      - run: uv run python -m unittest discover -s tests
+      - run: uv run python tools/check_architecture.py
+      - run: uv run python tools/check_repository_assets.py
+      - name: Secret scan
+        shell: bash
+        run: |
+          if rg -n --hidden --glob '!uv.lock' --glob '!datasets/demo/.runtime/**' '(password|api[_-]?key|client_secret)\s*[:=]\s*[^\s"'"'']+' .; then
+            echo "Potential hard-coded secret found"
+            exit 1
+          fi

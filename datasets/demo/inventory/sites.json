@@ -1,0 +1,17 @@
+[
+  {
+    "site_id": "site-sz-hq",
+    "name": "深圳总部",
+    "security_level": "internal"
+  },
+  {
+    "site_id": "site-gz-dc",
+    "name": "广州数据中心",
+    "security_level": "restricted"
+  },
+  {
+    "site_id": "site-sh-branch",
+    "name": "上海分支",
+    "security_level": "internal"
+  }
+]

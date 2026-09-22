@@ -1,0 +1,142 @@
+[
+  {
+    "link_id": "link-01",
+    "a_device_id": "hw-sz-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "h3c-sz-dist-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-02",
+    "a_device_id": "hw-sz-core-02",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "h3c-sz-dist-02",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-03",
+    "a_device_id": "h3c-sz-dist-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-sz-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-04",
+    "a_device_id": "h3c-sz-dist-02",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-sz-access-02",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-05",
+    "a_device_id": "hw-sz-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "hw-gz-edge-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-06",
+    "a_device_id": "hw-gz-edge-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "h3c-gz-core-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-07",
+    "a_device_id": "h3c-gz-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "hw-gz-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-08",
+    "a_device_id": "h3c-gz-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "h3c-gz-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-09",
+    "a_device_id": "h3c-gz-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-gz-dist-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-10",
+    "a_device_id": "rg-gz-dist-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-sh-core-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-11",
+    "a_device_id": "rg-sh-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "hw-sh-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-12",
+    "a_device_id": "rg-sh-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "h3c-sh-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-13",
+    "a_device_id": "rg-sh-core-01",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-sh-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  },
+  {
+    "link_id": "link-14",
+    "a_device_id": "hw-sz-core-02",
+    "a_interface": "XGE1/0/49",
+    "b_device_id": "rg-sz-access-01",
+    "b_interface": "XGE1/0/50",
+    "link_type": "ethernet",
+    "valid_from": "2026-09-01T00:00:00Z",
+    "valid_to": null
+  }
+]
